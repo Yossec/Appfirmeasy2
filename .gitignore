@@ -1,0 +1,16 @@
+# Compiled object files
+*.o
+*.obj
+
+# Logs
+*.log
+
+# Visual Studio temporary files
+.vs/
+.vscode/
+*.user
+*.suo
+
+# Build results
+[Bb]in/
+[Oo]bj/

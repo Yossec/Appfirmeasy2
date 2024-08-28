@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                   >
+    
+    <Color x:Key="colorVerde">#01A280</Color>
+    <Color x:Key="colorAzul">#060144</Color>
+    <!-- Definición de estilos -->
+    <Style x:Key="textColorStyleVerde"
+           TargetType="Label">
+        <Setter Property="TextColor"
+                Value="{AppThemeBinding Light={DynamicResource colorVerde}, Dark={DynamicResource colorVerde}}" />
+    </Style>
+    <Style x:Key="fondoApp"
+           TargetType="ContentPage">
+        <Setter Property="BackgroundColor"
+                Value="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource White}}" />
+        <Setter Property="NavigationPage.HasNavigationBar"
+                Value="False" />
+    </Style>
+</ResourceDictionary>

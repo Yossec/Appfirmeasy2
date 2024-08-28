@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Appfirmeasy.views.vistas.Start"
+             Title="Start"
+             Style="{StaticResource fondoApp}">
+    <ContentPage.Resources>
+        <Color x:Key="colorVerde">#01A280</Color>
+        <Color x:Key="colorAzul">#060144</Color>
+    </ContentPage.Resources>
+    
+    <ScrollView>
+        <Grid VerticalOptions="FillAndExpand" Padding="30"
+              RowDefinitions="*, Auto">
+            <!-- Contenido principal en el centro -->
+            <StackLayout Grid.Row="0"
+                         VerticalOptions="CenterAndExpand">
+                <StackLayout HorizontalOptions="Start" Spacing="14">
+                    <Label Text="BIENVENIDO"
+                           FontAttributes="Bold"
+                           TextColor="{DynamicResource textColorStyleVerde}"
+                           FontSize="Medium"/>
+                    <Label Text="Brindamos el mejor servicio de firma digital y electrónica"
+                            FontSize="Large"
+                           TextColor="{DynamicResource colorAzul}"
+                           FontAttributes="Bold"/>
+                    <Label Text="Para personas naturales y jurídicas."
+                           FontSize="Medium"
+                           TextColor="{DynamicResource colorAzul}"/>
+                </StackLayout>
+
+            </StackLayout>
+            <!-- Botón en el pie de página -->
+            <StackLayout Grid.Row="1"
+                         VerticalOptions="End"
+                         HorizontalOptions="FillAndExpand">
+                <Frame CornerRadius="50"
+                       BackgroundColor="{DynamicResource colorVerde}"
+                       HasShadow="True"
+                       Padding="10"
+                       HorizontalOptions="FillAndExpand"
+                       VerticalOptions="FillAndExpand"
+                       BorderColor="{DynamicResource colorVerde}"
+                      >
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnFrameTapped" />
+                    </Frame.GestureRecognizers>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <Label Text="Comenzar"
+                               FontSize="Body"
+                               FontAttributes="Bold"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"
+                               Grid.Column="0" 
+                               TextColor="White"/>
+                        <Image Source="flechDerecha.png"
+                               HorizontalOptions="End"
+                               VerticalOptions="Center"
+                               Grid.Column="1"
+                               Margin="0,0,5,0"
+                               WidthRequest="24"/>
+                    </Grid>
+                </Frame>
+            </StackLayout>
+        </Grid>
+    </ScrollView>
+</ContentPage>
