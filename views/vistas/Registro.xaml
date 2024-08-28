@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Appfirmeasy.views.vistas.Registro"
+             Title="Registro"
+             xmlns:ur="http://schemas.enisn-projects.io/dotnet/maui/uraniumui/material"
+             Style="{DynamicResource fondoApp}">
+    <ScrollView>
+        
+        <VerticalStackLayout Padding="20">
+            <Label 
+                Text="Welcome to .NET MAUI!"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+            <ur:TextField Title="Nombre Completo / razon social " />
+            <ur:TextField Title="Correo electronico " />
+            <ur:TextField Title="Numero de celular " />
+            <ur:TextField Title="Contraseña " />
+            <ur:TextField Title="Confirmar Contraseña " />
+            <ur:CheckBox Text="Acepto los Terminos y Condiciones" />
+            <Button StyleClass="FilledButton"
+                    Text="Crear Cuenta" />
+            <Label Text=" -------- o registrarse con -------- "/>
+            
+            <StackLayout Grid.Row="1"
+                         VerticalOptions="End"
+                         HorizontalOptions="{OnPlatform WinUI=Start, Default=Center}">
+                <Frame Style="{DynamicResource BackgroundColorPrimary}"
+                       HasShadow="True"
+                       Padding="10"
+                       HeightRequest="50"
+                       WidthRequest="{OnPlatform WinUI= 150, Default= 300}"
+                       HorizontalOptions="FillAndExpand"
+                       CornerRadius="{OnPlatform WinUI=8, Default=50 }">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnFrameTapped" />
+                    </Frame.GestureRecognizers>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <Label Text="Crear Cuenta con Google"
+                               FontSize="Body"
+                               FontAttributes="Bold"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"
+                               Grid.Column="0"
+                               TextColor="White" />
+                        <Image Source="flechDerecha.png"
+                               HorizontalOptions="End"
+                               VerticalOptions="Center"
+                               Grid.Column="1"
+                               Margin="0,0,5,0"
+                               WidthRequest="24" />
+                    </Grid>
+                </Frame>
+            </StackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
