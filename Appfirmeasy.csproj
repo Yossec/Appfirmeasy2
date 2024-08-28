@@ -64,14 +64,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\configuracion\configuracion.csproj" />
-	  <ProjectReference Include="..\firmador\firmador.csproj" />
-	  <ProjectReference Include="..\flujoFirma\flujoFirma.csproj" />
-	  <ProjectReference Include="..\notificacion\notificacion.csproj" />
-	  <ProjectReference Include="..\visual\visual.csproj" />
-	</ItemGroup>
-
-	<ItemGroup>
 	  <MauiXaml Update="Resources\Styles\StyleFirmEasy.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
