@@ -14,15 +14,15 @@
                 <StackLayout HorizontalOptions="Start" Spacing="14">
                     <Label Text="BIENVENIDO"
                            FontAttributes="Bold"
-                           Style="{DynamicResource textVerde}"
+                           Style="{DynamicResource textColorPrimary}"
                            FontSize="Medium"/>
                     <Label Text="Brindamos el mejor servicio de firma digital y electrónica"
                             FontSize="Large"
-                           Style="{DynamicResource textAzul}"
+                           Style="{DynamicResource textColorSecundary}"
                            FontAttributes="Bold"/>
                     <Label Text="Para personas naturales y jurídicas."
                            FontSize="Medium"
-                           Style="{DynamicResource textAzul}"/>
+                           Style="{DynamicResource textColorSecundary}"/>
                 </StackLayout>
 
             </StackLayout>
