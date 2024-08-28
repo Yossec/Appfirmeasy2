@@ -4,10 +4,6 @@
              x:Class="Appfirmeasy.views.vistas.Start"
              Title="Start"
              Style="{StaticResource fondoApp}">
-    <ContentPage.Resources>
-        <Color x:Key="colorVerde">#01A280</Color>
-        <Color x:Key="colorAzul">#060144</Color>
-    </ContentPage.Resources>
     
     <ScrollView>
         <Grid VerticalOptions="FillAndExpand" Padding="30"
@@ -18,15 +14,15 @@
                 <StackLayout HorizontalOptions="Start" Spacing="14">
                     <Label Text="BIENVENIDO"
                            FontAttributes="Bold"
-                           TextColor="{DynamicResource textColorStyleVerde}"
+                           Style="{DynamicResource textVerde}"
                            FontSize="Medium"/>
                     <Label Text="Brindamos el mejor servicio de firma digital y electrónica"
                             FontSize="Large"
-                           TextColor="{DynamicResource colorAzul}"
+                           Style="{DynamicResource textAzul}"
                            FontAttributes="Bold"/>
                     <Label Text="Para personas naturales y jurídicas."
                            FontSize="Medium"
-                           TextColor="{DynamicResource colorAzul}"/>
+                           Style="{DynamicResource textAzul}"/>
                 </StackLayout>
 
             </StackLayout>
@@ -34,14 +30,14 @@
             <StackLayout Grid.Row="1"
                          VerticalOptions="End"
                          HorizontalOptions="{OnPlatform WinUI=Start, Default=Center}">
-                <Frame BackgroundColor="{DynamicResource colorVerde}"
+                <Frame Style="{DynamicResource BackgroundColorPrimary}"
                        HasShadow="True"
                        Padding="10"
                        HeightRequest="50"
                        WidthRequest="{OnPlatform WinUI= 150, Default= 300}"
                        HorizontalOptions="FillAndExpand"
                        CornerRadius="{OnPlatform WinUI=8, Default=50 }"
-                       BorderColor="{DynamicResource colorVerde}">
+                       >
                  
                     <Frame.GestureRecognizers>
                         <TapGestureRecognizer Tapped="OnFrameTapped" />

@@ -1,20 +1,51 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-                   >
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
     
+    <!-- Colores light -->
     <Color x:Key="colorVerde">#01A280</Color>
     <Color x:Key="colorAzul">#060144</Color>
-    <!-- Definición de estilos -->
-    <Style x:Key="textColorStyleVerde"
+    <Color x:Key="colorWhite">White</Color>
+    <!-- Definición de estilos Label -->
+    <Style x:Key="textColorPrimary"
            TargetType="Label">
         <Setter Property="TextColor"
-                Value="{AppThemeBinding Light={DynamicResource colorVerde}, Dark={DynamicResource colorVerde}}" />
+                Value="{DynamicResource colorVerde}" />
     </Style>
+    <Style x:Key="textColorSecundary"
+           TargetType="Label">
+        <Setter Property="TextColor"
+                Value="{DynamicResource colorAzul}" />
+    </Style>
+    <!-- Definición de estilos Fondo -->
+    <Style x:Key="BackgroundColorPrimary"
+           TargetType="Frame">
+        <Setter Property="BackgroundColor"
+                Value="{DynamicResource colorVerde}" />
+        <Setter Property="BorderColor"
+                Value="{DynamicResource colorVerde}" />
+    </Style>
+    <!-- Definición de estilos Boton -->
+    <Style x:Key="BotonPrimary"
+           TargetType="Button">
+        <Setter Property="BackgroundColor"
+                Value="{DynamicResource colorVerde}" />
+        <Setter Property="BorderColor"
+                Value="{DynamicResource colorVerde}" />
+        <Setter Property="TextColor"
+                Value="{DynamicResource colorWhite}" />
+        <Setter Property="FontSize"
+                Value="Body" />
+        <Setter Property="FontAttributes"
+                Value="Bold" />
+        <Setter Property="Padding"
+                Value="10" />
+    </Style>
+    <!-- Definición de estilos Pagina  -->
     <Style x:Key="fondoApp"
            TargetType="ContentPage">
         <Setter Property="BackgroundColor"
-                Value="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource White}}" />
+                Value="{DynamicResource colorWhite}" />
         <Setter Property="NavigationPage.HasNavigationBar"
                 Value="False" />
     </Style>
