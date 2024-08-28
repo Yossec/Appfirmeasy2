@@ -33,15 +33,16 @@
             <!-- Botón en el pie de página -->
             <StackLayout Grid.Row="1"
                          VerticalOptions="End"
-                         HorizontalOptions="FillAndExpand">
-                <Frame CornerRadius="50"
-                       BackgroundColor="{DynamicResource colorVerde}"
+                         HorizontalOptions="{OnPlatform WinUI=Start, Default=Center}">
+                <Frame BackgroundColor="{DynamicResource colorVerde}"
                        HasShadow="True"
                        Padding="10"
+                       HeightRequest="50"
+                       WidthRequest="{OnPlatform WinUI= 150, Default= 300}"
                        HorizontalOptions="FillAndExpand"
-                       VerticalOptions="FillAndExpand"
-                       BorderColor="{DynamicResource colorVerde}"
-                      >
+                       CornerRadius="{OnPlatform WinUI=8, Default=50 }"
+                       BorderColor="{DynamicResource colorVerde}">
+                 
                     <Frame.GestureRecognizers>
                         <TapGestureRecognizer Tapped="OnFrameTapped" />
                     </Frame.GestureRecognizers>
@@ -55,14 +56,14 @@
                                FontAttributes="Bold"
                                HorizontalOptions="Center"
                                VerticalOptions="Center"
-                               Grid.Column="0" 
-                               TextColor="White"/>
+                               Grid.Column="0"
+                               TextColor="White" />
                         <Image Source="flechDerecha.png"
                                HorizontalOptions="End"
                                VerticalOptions="Center"
                                Grid.Column="1"
                                Margin="0,0,5,0"
-                               WidthRequest="24"/>
+                               WidthRequest="24" />
                     </Grid>
                 </Frame>
             </StackLayout>
