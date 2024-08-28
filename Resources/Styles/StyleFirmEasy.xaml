@@ -41,6 +41,11 @@
         <Setter Property="Padding"
                 Value="10" />
     </Style>
+    <!-- CheckBox -->
+    <Style x:Key="CheckBoxVerde" TargetType="CheckBox">
+        <Setter Property="Color"
+                Value="{DynamicResource colorVerde}" />
+    </Style>
     <!-- Definición de estilos Pagina  -->
     <Style x:Key="fondoApp"
            TargetType="ContentPage">

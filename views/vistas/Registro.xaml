@@ -7,55 +7,97 @@
              Style="{DynamicResource fondoApp}">
     <ScrollView>
         
-        <VerticalStackLayout Padding="20">
+        <VerticalStackLayout Padding="30" VerticalOptions="Center" Spacing="15">
             <Label 
                 Text="Welcome to .NET MAUI!"
                 VerticalOptions="Center" 
                 HorizontalOptions="Center" />
-            <ur:TextField Title="Nombre Completo / razon social " />
-            <ur:TextField Title="Correo electronico " />
-            <ur:TextField Title="Numero de celular " />
-            <ur:TextField Title="Contraseña " />
-            <ur:TextField Title="Confirmar Contraseña " />
-            <ur:CheckBox Text="Acepto los Terminos y Condiciones" />
-            <Button StyleClass="FilledButton"
-                    Text="Crear Cuenta" />
-            <Label Text=" -------- o registrarse con -------- "/>
-            
-            <StackLayout Grid.Row="1"
-                         VerticalOptions="End"
-                         HorizontalOptions="{OnPlatform WinUI=Start, Default=Center}">
-                <Frame Style="{DynamicResource BackgroundColorPrimary}"
-                       HasShadow="True"
-                       Padding="10"
-                       HeightRequest="50"
-                       WidthRequest="{OnPlatform WinUI= 150, Default= 300}"
-                       HorizontalOptions="FillAndExpand"
-                       CornerRadius="{OnPlatform WinUI=8, Default=50 }">
-                    <Frame.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="OnFrameTapped" />
-                    </Frame.GestureRecognizers>
-                    <Grid>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="Auto" />
-                        </Grid.ColumnDefinitions>
-                        <Label Text="Crear Cuenta con Google"
-                               FontSize="Body"
-                               FontAttributes="Bold"
-                               HorizontalOptions="Center"
-                               VerticalOptions="Center"
-                               Grid.Column="0"
-                               TextColor="White" />
-                        <Image Source="flechDerecha.png"
-                               HorizontalOptions="End"
-                               VerticalOptions="Center"
-                               Grid.Column="1"
-                               Margin="0,0,5,0"
-                               WidthRequest="24" />
-                    </Grid>
-                </Frame>
+            <ur:TextField Title="Nombre Completo / razon social "
+                          AccentColor="Black"
+                          Keyboard="Text"/>
+            <ur:TextField Title="Correo electronico "
+                          AccentColor="Black"
+                          Keyboard="Email"/>
+            <ur:TextField Title="Numero de celular "
+                          AccentColor="Black"
+                          Keyboard="Numeric" />
+            <ur:TextField Title="Contraseña "
+                          AccentColor="Black" 
+                          IsPassword="True"/>
+            <ur:TextField Title="Confirmar Contraseña "
+                          AccentColor="Black"
+                          IsPassword="True"/>
+            <HorizontalStackLayout VerticalOptions="Center">
+                <ur:CheckBox Color="#01A280"
+                          />
+                <Label Text="Acepto los "
+                       VerticalOptions="Center" />
+                <Label Text="Términos y Condiciones"
+                       Style="{DynamicResource textColorPrimary}"
+                       VerticalOptions="Center"
+                       FontAttributes="Bold"
+                       TextDecorations="Underline">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnLabelTapped" />
+                    </Label.GestureRecognizers>
+                </Label>
+            </HorizontalStackLayout>
+            <StackLayout>
+                <Button StyleClass="FilledButton"
+                        Text="Crear Cuenta"
+                        Style="{DynamicResource BotonPrimary}"/>
             </StackLayout>
+            <StackLayout Spacing="20"
+                         VerticalOptions="CenterAndExpand"
+                         Padding="0,15">
+                <Label Text=" -------- o registrarse con -------- "
+                       HorizontalTextAlignment="Center" />
+                <StackLayout Grid.Row="1"
+                             VerticalOptions="End"
+                             HorizontalOptions="{OnPlatform WinUI=Start, Default=Center}">
+                    <Frame BackgroundColor="White"
+                           HasShadow="True"
+                           Padding="10"
+                           HeightRequest="50"
+                           WidthRequest="{OnPlatform WinUI= 150, Default= 300}"
+                           HorizontalOptions="FillAndExpand"
+                           CornerRadius="{OnPlatform WinUI=8, Default=50 }">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnFrameTapped" />
+                        </Frame.GestureRecognizers>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <Label Text="Crear Cuenta con Google"
+                                   FontSize="Body"
+                                   FontAttributes="Bold"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"
+                                   Grid.Column="0"
+                                   TextColor="Black" />
+                            <Image Source="flechDerecha.png"
+                                   HorizontalOptions="End"
+                                   VerticalOptions="Center"
+                                   Grid.Column="1"
+                                   Margin="0,0,5,0"
+                                   WidthRequest="24" />
+                        </Grid>
+                    </Frame>
+                </StackLayout>
+            </StackLayout>
+            <HorizontalStackLayout HorizontalOptions="CenterAndExpand" Spacing="10">
+                <Label Text="¿Ya tienes una cuenta?" TextColor="Black"/>
+                <Label Text="Ingresar"
+                       Style="{DynamicResource textColorPrimary}"
+                       FontAttributes="Bold"
+                       TextDecorations="Underline">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnLabelLogin" />
+                    </Label.GestureRecognizers>
+                </Label>
+            </HorizontalStackLayout>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
