@@ -50,24 +50,19 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Images\flechDerecha.png" />
+	  <None Remove="Resources\Images\icon_google.png" />
+	  <None Remove="Resources\Images\logo_firmeasy.png" />
+	  <None Remove="Resources\Images\simb_firmeasy.png" />
 	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
+		<PackageReference Include="UraniumUI.Material" Version="2.5.6" />
 	</ItemGroup>
 
 	<ItemGroup>
 	  <Folder Include="models\" />
 	  <Folder Include="modelView\" />
-	  <Folder Include="views\componentes\" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <ProjectReference Include="..\configuracion\configuracion.csproj" />
-	  <ProjectReference Include="..\firmador\firmador.csproj" />
-	  <ProjectReference Include="..\flujoFirma\flujoFirma.csproj" />
-	  <ProjectReference Include="..\notificacion\notificacion.csproj" />
-	  <ProjectReference Include="..\visual\visual.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -78,6 +73,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="views\vistas\Login.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="views\vistas\Registro.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="views\vistas\Start.xaml">
