@@ -57,8 +57,25 @@
             <StackLayout Spacing="20"
                          VerticalOptions="CenterAndExpand"
                          >
-                <Label Text=" -------- o registrarse con -------- "
-                       HorizontalTextAlignment="Center" />
+                <StackLayout Orientation="Horizontal"
+                             VerticalOptions="Center"
+                             HorizontalOptions="FillAndExpand">
+                    <!-- Línea antes del texto -->
+                    <BoxView HeightRequest="1"
+                             Color="LightGray"
+                             VerticalOptions="Center"
+                             HorizontalOptions="FillAndExpand" />
+                    <!-- Espacio para el texto -->
+                    <Label Text="O ingresa con"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center"
+                           Margin="10,0" />
+                    <!-- Línea después del texto -->
+                    <BoxView HeightRequest="1"
+                             Color="LightGray"
+                             VerticalOptions="Center"
+                             HorizontalOptions="FillAndExpand" />
+                </StackLayout>
                 <StackLayout Grid.Row="1"
                              VerticalOptions="End"
                              HorizontalOptions="{OnPlatform WinUI=Center, Default=Center}">

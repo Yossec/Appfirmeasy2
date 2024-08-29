@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ur="http://schemas.enisn-projects.io/dotnet/maui/uraniumui/material"
+             xmlns:componentes="clr-namespace:Appfirmeasy.views.componentes"
+             x:Class="Appfirmeasy.views.vistas.NewPage1"
+             Title="NewPage1"
+             Style="{DynamicResource fondoApp}"
+             >
+    <VerticalStackLayout Padding="30"
+                         VerticalOptions="CenterAndExpand" Spacing="20">
+        <StackLayout>
+            <componentes:Logo />
+        </StackLayout>
+        <ur:TextField Title="Correo Electronico" />
+        <ur:TextField Title="Contraseña "
+                      IsPassword="True">
+            <ur:TextField.Attachments>
+                <ur:TextFieldPasswordShowHideAttachment />
+            </ur:TextField.Attachments>
+        </ur:TextField>
+        <Button 
+                Style="{DynamicResource BotonPrimary}"
+                Text="Ingresar"
+                WidthRequest="330"
+            HeightRequest="50"/>
+        <StackLayout Orientation="Horizontal"
+                     VerticalOptions="Center"
+                     HorizontalOptions="FillAndExpand">
+            <!-- Línea antes del texto -->
+            <BoxView HeightRequest="1"
+                     Color="LightGray"
+                     VerticalOptions="Center"
+                     HorizontalOptions="FillAndExpand" />
+            <!-- Espacio para el texto -->
+            <Label Text="O ingresa con"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   Margin="10,0" />
+            <!-- Línea después del texto -->
+            <BoxView HeightRequest="1"
+                     Color="LightGray"
+                     VerticalOptions="Center"
+                     HorizontalOptions="FillAndExpand" />
+        </StackLayout>
+        <StackLayout Grid.Row="1"
+                     VerticalOptions="End"
+                     HorizontalOptions="{OnPlatform WinUI=Center, Default=Center}">
+            <Frame BackgroundColor="White"
+                   HasShadow="True"
+                   Padding="10"
+                   HeightRequest="50"
+                   WidthRequest="{OnPlatform WinUI= 350, Default= 330}"
+                   HorizontalOptions="FillAndExpand"
+                   CornerRadius="{OnPlatform WinUI=8, Default=50 }">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnFrameTapped" />
+                </Frame.GestureRecognizers>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <Label Text="Crear Cuenta con Google"
+                           FontSize="Body"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           Grid.Column="0"
+                           TextColor="Black" />
+                    <Image Source="icon_google.png"
+                           HorizontalOptions="End"
+                           VerticalOptions="Center"
+                           Grid.Column="1"
+                           Margin="0,0,5,0"
+                           WidthRequest="24" />
+                </Grid>
+            </Frame>
+        </StackLayout>
+        <HorizontalStackLayout HorizontalOptions="CenterAndExpand"
+                               Spacing="10">
+            <Label Text="¿Aún no tienes una cuenta?"
+                   TextColor="Black" />
+            <Label Text="Registrarme"
+                   Style="{DynamicResource textColorPrimary}"
+                   FontAttributes="Bold"
+                   TextDecorations="Underline">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnLabelRegistro" />
+                </Label.GestureRecognizers>
+            </Label>
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>

@@ -13,7 +13,7 @@ public partial class Registro : ContentPage
     }
     private async void OnLabelLogin(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new Login());
+        await Navigation.PushAsync(new NewPage1());
 
     }
     private void OnLabelTapped(object sender, EventArgs e)

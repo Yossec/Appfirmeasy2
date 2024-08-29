@@ -9,7 +9,7 @@ public partial class Start : ContentPage
 
     private async void OnFrameTapped(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new Login());
+        await Navigation.PushAsync(new NewPage1());
         Navigation.RemovePage(this);
     }
 }
