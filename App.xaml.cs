@@ -8,7 +8,7 @@ namespace Appfirmeasy
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new NewPage1());
+            MainPage = new NavigationPage(new Start());
         }
     }
 }
