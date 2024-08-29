@@ -4,29 +4,35 @@
              x:Class="Appfirmeasy.views.vistas.Registro"
              Title="Registro"
              xmlns:ur="http://schemas.enisn-projects.io/dotnet/maui/uraniumui/material"
+             xmlns:componentes="clr-namespace:Appfirmeasy.views.componentes"
              Style="{DynamicResource fondoApp}">
     <ScrollView>
         
-        <VerticalStackLayout Padding="30" VerticalOptions="Center" Spacing="15">
-            <Label 
-                Text="Welcome to .NET MAUI!"
-                VerticalOptions="Center" 
-                HorizontalOptions="Center" />
-            <ur:TextField Title="Nombre Completo / razon social "
-                          AccentColor="Black"
-                          Keyboard="Text"/>
-            <ur:TextField Title="Correo electronico "
-                          AccentColor="Black"
-                          Keyboard="Email"/>
-            <ur:TextField Title="Numero de celular "
-                          AccentColor="Black"
-                          Keyboard="Numeric" />
-            <ur:TextField Title="Contraseña "
-                          AccentColor="Black" 
-                          IsPassword="True"/>
-            <ur:TextField Title="Confirmar Contraseña "
-                          AccentColor="Black"
-                          IsPassword="True"/>
+        <VerticalStackLayout Padding="30,50" VerticalOptions="Center" Spacing="25">
+            <StackLayout>
+                <componentes:Logo />
+            </StackLayout>
+            <StackLayout Spacing="12">
+                <ur:TextField Title="Nombre Completo / razon social "
+                              AccentColor="Black"
+                              Keyboard="Text"/>
+                <ur:TextField Title="Correo electronico "
+                              AccentColor="Black"
+                              Keyboard="Email"/>
+                <ur:TextField Title="Numero de celular "
+                              AccentColor="Black"
+                              Keyboard="Numeric" />
+                <ur:TextField Title="Contraseña "
+                              AccentColor="Black"
+                              IsPassword="True">
+                    <ur:TextField.Attachments>
+                        <ur:TextFieldPasswordShowHideAttachment />
+                    </ur:TextField.Attachments>
+                </ur:TextField>
+                <ur:TextField Title="Confirmar Contraseña "
+                              AccentColor="Black"
+                              IsPassword="True"/>
+            </StackLayout>
             <HorizontalStackLayout VerticalOptions="Center">
                 <ur:CheckBox Color="#01A280"
                           />
@@ -45,21 +51,22 @@
             <StackLayout>
                 <Button StyleClass="FilledButton"
                         Text="Crear Cuenta"
-                        Style="{DynamicResource BotonPrimary}"/>
+                        Style="{DynamicResource BotonPrimary}"
+                        />
             </StackLayout>
             <StackLayout Spacing="20"
                          VerticalOptions="CenterAndExpand"
-                         Padding="0,15">
+                         >
                 <Label Text=" -------- o registrarse con -------- "
                        HorizontalTextAlignment="Center" />
                 <StackLayout Grid.Row="1"
                              VerticalOptions="End"
-                             HorizontalOptions="{OnPlatform WinUI=Start, Default=Center}">
+                             HorizontalOptions="{OnPlatform WinUI=Center, Default=Center}">
                     <Frame BackgroundColor="White"
                            HasShadow="True"
                            Padding="10"
                            HeightRequest="50"
-                           WidthRequest="{OnPlatform WinUI= 150, Default= 300}"
+                           WidthRequest="{OnPlatform WinUI= 350, Default= 300}"
                            HorizontalOptions="FillAndExpand"
                            CornerRadius="{OnPlatform WinUI=8, Default=50 }">
                         <Frame.GestureRecognizers>
@@ -77,7 +84,7 @@
                                    VerticalOptions="Center"
                                    Grid.Column="0"
                                    TextColor="Black" />
-                            <Image Source="flechDerecha.png"
+                            <Image Source="icon_google.png"
                                    HorizontalOptions="End"
                                    VerticalOptions="Center"
                                    Grid.Column="1"

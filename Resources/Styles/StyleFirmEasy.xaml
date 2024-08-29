@@ -42,7 +42,7 @@
                 Value="10" />
     </Style>
     <!-- CheckBox -->
-    <Style x:Key="CheckBoxVerde" TargetType="CheckBox">
+    <Style x:Key="CheckBox" TargetType="CheckBox">
         <Setter Property="Color"
                 Value="{DynamicResource colorVerde}" />
     </Style>

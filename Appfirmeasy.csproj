@@ -50,6 +50,9 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Images\flechDerecha.png" />
+	  <None Remove="Resources\Images\icon_google.png" />
+	  <None Remove="Resources\Images\logo_firmeasy.png" />
+	  <None Remove="Resources\Images\simb_firmeasy.png" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -60,11 +63,13 @@
 	<ItemGroup>
 	  <Folder Include="models\" />
 	  <Folder Include="modelView\" />
-	  <Folder Include="views\componentes\" />
 	</ItemGroup>
 
 	<ItemGroup>
 	  <MauiXaml Update="Resources\Styles\StyleFirmEasy.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="views\componentes\Logo.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="views\vistas\Login.xaml">

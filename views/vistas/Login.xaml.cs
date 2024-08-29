@@ -5,6 +5,10 @@ public partial class Login : ContentPage
 	public Login()
 	{
 		InitializeComponent();
-        NavigationPage.SetHasBackButton(this, false);
+    }
+
+    private async void OnLabelRegistro(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new Registro());
     }
 }
