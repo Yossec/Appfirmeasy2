@@ -16,4 +16,5 @@ public partial class NewPage1 : ContentPage
     {
         await Navigation.PushAsync(new Registro());
     }
+    //comentario 
 }

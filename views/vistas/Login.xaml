@@ -13,5 +13,6 @@
                 <TapGestureRecognizer Tapped="OnLabelRegistro" />
             </Label.GestureRecognizers>
         </Label>
+        <Label Text="PRUEBA"/>
     </VerticalStackLayout>
 </ContentPage>
