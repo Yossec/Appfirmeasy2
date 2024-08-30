@@ -1,0 +1,73 @@
+is_global = true
+build_property.TargetFramework = net7.0-windows10.0.19041.0
+build_property.TargetPlatformMinVersion = 10.0.17763.0
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 9A19103F-16F7-4668-BE54-9A1E7A4F7556
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Appfirmeasy
+build_property.ProjectDir = C:\Firmeasy\Appfirmeasy\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[C:/Firmeasy/Appfirmeasy/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Appfirmeasy.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Firmeasy/Appfirmeasy/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Appfirmeasy.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Firmeasy/Appfirmeasy/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Appfirmeasy.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Firmeasy/Appfirmeasy/Resources/Styles/StyleFirmEasy.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Appfirmeasy.Resources.Styles.StyleFirmEasy.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\StyleFirmEasy.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\StyleFirmEasy.xaml
+
+[C:/Firmeasy/Appfirmeasy/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Appfirmeasy.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Firmeasy/Appfirmeasy/views/componentes/Logo.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Appfirmeasy.views.componentes.Logo.xaml
+build_metadata.AdditionalFiles.TargetPath = views\componentes\Logo.xaml
+build_metadata.AdditionalFiles.RelativePath = views\componentes\Logo.xaml
+
+[C:/Firmeasy/Appfirmeasy/views/vistas/Login.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Appfirmeasy.views.vistas.Login.xaml
+build_metadata.AdditionalFiles.TargetPath = views\vistas\Login.xaml
+build_metadata.AdditionalFiles.RelativePath = views\vistas\Login.xaml
+
+[C:/Firmeasy/Appfirmeasy/views/vistas/NewPage1.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Appfirmeasy.views.vistas.NewPage1.xaml
+build_metadata.AdditionalFiles.TargetPath = views\vistas\NewPage1.xaml
+build_metadata.AdditionalFiles.RelativePath = views\vistas\NewPage1.xaml
+
+[C:/Firmeasy/Appfirmeasy/views/vistas/Registro.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Appfirmeasy.views.vistas.Registro.xaml
+build_metadata.AdditionalFiles.TargetPath = views\vistas\Registro.xaml
+build_metadata.AdditionalFiles.RelativePath = views\vistas\Registro.xaml
+
+[C:/Firmeasy/Appfirmeasy/views/vistas/Start.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Appfirmeasy.views.vistas.Start.xaml
+build_metadata.AdditionalFiles.TargetPath = views\vistas\Start.xaml
+build_metadata.AdditionalFiles.RelativePath = views\vistas\Start.xaml
